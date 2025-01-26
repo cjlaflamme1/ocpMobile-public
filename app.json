@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "Outdoor Community Project",
+    "slug": "outdoor-community-project",
+    "version": "1.0.24",
+    "orientation": "portrait",
+    "icon": "./assets/logoOnlyApp.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FAFAFA",
+    "splash": {
+      "image": "./assets/originalLogo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/logoOnlyApp.png",
+          "color": "#000000"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.outdoorcommunityproject",
+      "supportsTablet": false,
+      "backgroundColor": "#FAFAFA",
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "versionCode": 41,
+      "package": "com.outdoorcommunityproject",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logoDroid.png",
+        "backgroundColor": "#000000"
+      },
+      "backgroundColor": "#FAFAFA",
+      "googleServicesFile": "./google-services.json"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2097390c-7e23-45f1-8af9-542fff8eaa7c"
+      }
+    },
+    "owner": "cjlaflamme1"
+  }
+}
